@@ -15,14 +15,12 @@
   3. Print out the variables pointing at the "candy" and "fruit" Objects
 */
 
-// let snacks = {
-//   chips: { name: "Pringles", salty: true },
-//   candy: { name: "Twizzlers", salty: false },
-//   chocolate: { name: "Mars", salty: false },
-// };
+let snacks = {
+  chips: { name: "Pringles", salty: true },
+  candy: { name: "Twizzlers", salty: false },
+  chocolate: { name: "Mars", salty: false },
+};
 
-// const {
-//     chips: {name: "Pringles", salty: true},
-//     candy: {name: "Twizzlers", salty: false},
-//     chocolate: {name: "Mars", salty: false},
-// } 
+const { chips, candy, chocolate, fruit= {name: "Banana", salty: false}} = snacks;
+
+console.log(candy ,fruit)
